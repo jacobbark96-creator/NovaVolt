@@ -25,7 +25,7 @@ export default function BusDetails() {
               </h2>
               <div className="prose prose-base sm:prose-lg text-gray-600 font-sans">
                 <p className="mb-6">
-                  The UK Government is currently offering an upfront grant of <strong>£7,000</strong> to encourage homeowners to replace fossil fuel heating systems with a more efficient, low-carbon heat pump.
+                  The UK Government is currently offering an upfront grant of <strong>£7,500</strong> to encourage homeowners to replace fossil fuel heating systems with a more efficient, low-carbon heat pump.
                 </p>
                 <div className="bg-gradient-to-br from-purple-50 to-white p-5 sm:p-6 rounded-2xl border border-purple-100 shadow-sm mb-6 relative overflow-hidden">
                   <div className="absolute right-0 top-0 w-24 h-24 bg-purple-200 rounded-full opacity-20 blur-xl translate-x-1/2 -translate-y-1/2"></div>
@@ -34,7 +34,7 @@ export default function BusDetails() {
                       <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
                     </div>
                     <p className="m-0 text-sm sm:text-base text-gray-700">
-                      With NovaVolt, you don't even have to worry about the paperwork. <strong>We handle the entire grant application process for you</strong>, deducting the £7,000 directly from your final installation quote.
+                      With NovaVolt, you don't even have to worry about the paperwork. <strong>We handle the entire grant application process for you</strong>, deducting the £7,500 directly from your final installation quote.
                     </p>
                   </div>
                 </div>

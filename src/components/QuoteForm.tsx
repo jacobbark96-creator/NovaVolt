@@ -58,7 +58,7 @@ export default function QuoteForm() {
             Get Your Free Quote
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600 px-4 sm:px-0 font-sans">
-            Fill out the form below to find out how much you could save with a heat pump and your £7,000 government grant.
+            Fill out the form below to find out how much you could save with a heat pump and your £7,500 government grant.
           </p>
         </div>
 

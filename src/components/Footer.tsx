@@ -33,7 +33,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a href="#grant" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
-                      £7,000 Grant
+                      £7,500 Grant
                     </a>
                   </li>
                   <li>

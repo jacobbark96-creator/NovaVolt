@@ -39,7 +39,7 @@ export default function Navigation() {
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-1 pr-2">
             <a href="#benefits" className={`px-4 py-2 rounded-full text-sm font-medium transition-all hover:bg-purple-500/10 ${scrolled ? 'text-gray-600 hover:text-[#6B46C1]' : 'text-gray-300 hover:text-white'}`}>Benefits</a>
-            <a href="#grant" className={`px-4 py-2 rounded-full text-sm font-medium transition-all hover:bg-purple-500/10 ${scrolled ? 'text-gray-600 hover:text-[#6B46C1]' : 'text-gray-300 hover:text-white'}`}>£7k Grant</a>
+            <a href="#grant" className={`px-4 py-2 rounded-full text-sm font-medium transition-all hover:bg-purple-500/10 ${scrolled ? 'text-gray-600 hover:text-[#6B46C1]' : 'text-gray-300 hover:text-white'}`}>£7.5k Grant</a>
             <a href="#product" className={`px-4 py-2 rounded-full text-sm font-medium transition-all hover:bg-purple-500/10 ${scrolled ? 'text-gray-600 hover:text-[#6B46C1]' : 'text-gray-300 hover:text-white'}`}>Technology</a>
             <div className="pl-2">
               <a 
@@ -87,7 +87,7 @@ export default function Navigation() {
               className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${scrolled ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' : 'text-gray-300 hover:bg-white/10 hover:text-white'}`}
               onClick={() => setIsOpen(false)}
             >
-              £7k Grant
+              £7.5k Grant
             </a>
             <a
               href="#product"

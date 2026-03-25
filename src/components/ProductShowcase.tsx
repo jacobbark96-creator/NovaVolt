@@ -60,7 +60,7 @@ export default function ProductShowcase() {
             <div className="relative group w-full max-w-[320px] sm:max-w-md">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Sleek%20modern%20matte%20black%20heat%20pump%20unit%20close%20up,%20minimalist%20tech%20design,%20premium%20studio%20lighting,%20dark%20background,%20purple%20glow%20accents&image_size=portrait_4_3"
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Sleek%20modern%20matte%20black%20heat%20pump%20exterior%20unit%20with%20large%20fan%20grille,%20minimalist%20tech%20design,%20premium%20studio%20lighting,%20dark%20background,%20purple%20glow%20accents&image_size=portrait_4_3"
                 alt="Sleek modern black heat pump exterior unit"
                 className="relative w-full rounded-2xl shadow-2xl ring-1 ring-gray-900/5 object-cover aspect-[4/5] transform transition duration-500 hover:scale-[1.02]"
               />
