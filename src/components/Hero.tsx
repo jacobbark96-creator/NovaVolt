@@ -8,9 +8,9 @@ export default function Hero() {
         <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#6B46C1] to-[#9F7AEA] opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
       </div>
       
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-20 sm:pb-32 lg:flex lg:px-8 lg:py-32 items-center">
-        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 z-10 relative">
-          <div className="mt-24 sm:mt-32 lg:mt-16 flex items-center gap-x-4">
+      <div className="mx-auto max-w-7xl px-6 pb-16 pt-10 sm:pb-24 lg:flex lg:px-8 lg:py-20 items-center">
+        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl z-10 relative">
+          <div className="mt-10 sm:mt-16 lg:mt-8 flex items-center gap-x-4">
             <span className="inline-flex items-center space-x-2 rounded-full bg-purple-500/10 px-4 py-1.5 text-sm font-semibold leading-6 text-purple-300 ring-1 ring-inset ring-purple-500/20 backdrop-blur-sm">
               <Zap className="h-4 w-4" />
               <span>Boiler Upgrade Scheme</span>
@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
         </div>
         
-        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-20 relative z-10">
+        <div className="mx-auto mt-10 flex max-w-2xl sm:mt-16 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-20 relative z-10">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none relative">
             {/* Decorative ring behind image */}
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-purple-600 to-purple-400 opacity-20 blur-2xl"></div>
