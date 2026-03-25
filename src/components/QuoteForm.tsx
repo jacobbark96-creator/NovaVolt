@@ -47,10 +47,14 @@ export default function QuoteForm() {
   };
 
   return (
-    <div id="quote" className="bg-gray-50 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div id="quote" className="bg-white py-24 sm:py-32 relative overflow-hidden">
+      {/* Decorative blobs */}
+      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-purple-50 opacity-50 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-purple-50 opacity-50 blur-3xl"></div>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Get Your Free Quote
           </h2>
           <p className="mt-4 text-lg text-gray-600">
@@ -59,25 +63,26 @@ export default function QuoteForm() {
         </div>
 
         <div className="mx-auto max-w-xl">
-          <div className="bg-white py-10 px-6 sm:px-10 rounded-2xl shadow-lg border-t-4 border-[#6B46C1]">
+          <div className="bg-white py-12 px-8 sm:px-12 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 relative">
+            <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-purple-400 to-[#6B46C1] rounded-t-3xl"></div>
             {isSuccess ? (
               <div className="text-center py-12">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-6">
-                  <CheckCircle className="h-8 w-8 text-green-600" />
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-50 mb-6">
+                  <CheckCircle className="h-10 w-10 text-green-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Request Received!</h3>
-                <p className="text-gray-600">
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Request Received!</h3>
+                <p className="text-gray-600 text-lg">
                   Thank you for your interest. One of our heating experts will be in touch shortly to discuss your requirements.
                 </p>
                 <button
                   onClick={() => setIsSuccess(false)}
-                  className="mt-8 text-[#6B46C1] font-semibold hover:text-[#55369A]"
+                  className="mt-8 text-[#6B46C1] font-semibold hover:text-[#55369A] transition-colors"
                 >
                   Submit another request
                 </button>
               </div>
             ) : (
-              <form ref={form} onSubmit={sendEmail} className="space-y-6">
+              <form ref={form} onSubmit={sendEmail} className="space-y-7">
                 <div>
                   <label htmlFor="user_name" className="block text-sm font-medium leading-6 text-gray-900">
                     Full Name
@@ -88,7 +93,7 @@ export default function QuoteForm() {
                       name="user_name"
                       id="user_name"
                       required
-                      className="block w-full rounded-md border-0 py-2.5 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6B46C1] sm:text-sm sm:leading-6 transition-shadow"
+                      className="block w-full rounded-xl border-0 py-3.5 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6B46C1] sm:text-sm sm:leading-6 transition-all"
                       placeholder="John Smith"
                     />
                   </div>
@@ -104,7 +109,7 @@ export default function QuoteForm() {
                       name="user_email"
                       id="user_email"
                       required
-                      className="block w-full rounded-md border-0 py-2.5 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6B46C1] sm:text-sm sm:leading-6 transition-shadow"
+                      className="block w-full rounded-xl border-0 py-3.5 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6B46C1] sm:text-sm sm:leading-6 transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -120,7 +125,7 @@ export default function QuoteForm() {
                       name="postcode"
                       id="postcode"
                       required
-                      className="block w-full rounded-md border-0 py-2.5 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6B46C1] sm:text-sm sm:leading-6 transition-shadow uppercase"
+                      className="block w-full rounded-xl border-0 py-3.5 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6B46C1] sm:text-sm sm:leading-6 transition-all uppercase"
                       placeholder="SW1A 1AA"
                     />
                   </div>
@@ -130,28 +135,28 @@ export default function QuoteForm() {
                 </div>
 
                 {error && (
-                  <div className="rounded-md bg-red-50 p-4">
+                  <div className="rounded-xl bg-red-50 p-4 border border-red-100">
                     <p className="text-sm text-red-700">{error}</p>
                   </div>
                 )}
 
-                <div className="pt-2">
+                <div className="pt-4">
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex w-full justify-center items-center rounded-md bg-[#6B46C1] px-3 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-[#55369A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6B46C1] disabled:opacity-70 disabled:cursor-not-allowed transition-all"
+                    className="flex w-full justify-center items-center rounded-xl bg-gradient-to-r from-[#6B46C1] to-[#805AD5] px-4 py-4 text-base font-semibold text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6B46C1] disabled:opacity-70 disabled:cursor-not-allowed transition-all hover:-translate-y-0.5"
                   >
                     {isSubmitting ? (
                       'Sending Request...'
                     ) : (
                       <>
                         Get My Free Quote
-                        <Send className="ml-2 -mr-1 h-4 w-4" aria-hidden="true" />
+                        <Send className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
                       </>
                     )}
                   </button>
                 </div>
-                <p className="text-xs text-center text-gray-500 mt-4">
+                <p className="text-xs text-center text-gray-500 mt-6">
                   By submitting this form, you agree to our privacy policy and terms of service.
                 </p>
               </form>

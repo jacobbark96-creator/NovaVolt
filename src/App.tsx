@@ -1,5 +1,6 @@
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import BusDetails from './components/BusDetails';
 import Benefits from './components/Benefits';
 import ProductShowcase from './components/ProductShowcase';
 import QuoteForm from './components/QuoteForm';
@@ -11,6 +12,7 @@ function App() {
       <Navigation />
       <main className="flex-grow">
         <Hero />
+        <BusDetails />
         <Benefits />
         <ProductShowcase />
         <QuoteForm />
