@@ -51,7 +51,7 @@ export default function Benefits() {
           <div className="inline-flex items-center gap-2 mb-6 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
             <span className="text-xs sm:text-sm font-semibold leading-6 text-[#6B46C1] uppercase tracking-wider font-sans">Why Upgrade?</span>
           </div>
-          <p className="mt-2 text-4xl sm:text-5xl font-serif font-bold tracking-tight text-gray-900 lg:text-7xl">
+          <p className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-gray-900">
             Smarter Heating,<br />Better Living
           </p>
           <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 max-w-xl mx-auto font-sans">
