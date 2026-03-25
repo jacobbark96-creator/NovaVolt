@@ -1,65 +1,98 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Zap, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#374151] text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <span className="text-2xl font-bold mb-4 block">NovaVolt</span>
-            <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
-              Your trusted partner for professional heat pump installations across the UK. Making energy-efficient heating accessible to everyone.
+    <footer className="bg-gray-900 border-t border-gray-800" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="space-y-8">
+            <a href="/" className="flex items-center gap-2 group">
+              <div className="p-1.5 rounded-lg bg-white/10 group-hover:bg-purple-500/20 transition-colors">
+                <Zap className="w-6 h-6 text-purple-400" />
+              </div>
+              <span className="text-2xl font-bold tracking-tight text-white">
+                NovaVolt
+              </span>
+            </a>
+            <p className="text-sm leading-6 text-gray-300 max-w-xs">
+              Making sustainable heating accessible and affordable for every UK home. Expert heat pump installations with full government grant support.
             </p>
+            <div className="flex space-x-6">
+              {/* Social links could go here */}
+            </div>
           </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center text-gray-300">
-                <Phone className="h-5 w-5 mr-3 text-[#9F7AEA]" />
-                <span>0800 123 4567</span>
-              </li>
-              <li className="flex items-center text-gray-300">
-                <Mail className="h-5 w-5 mr-3 text-[#9F7AEA]" />
-                <a href="mailto:info@novavolt.co.uk" className="hover:text-white transition-colors">
-                  info@novavolt.co.uk
-                </a>
-              </li>
-              <li className="flex items-start text-gray-300">
-                <MapPin className="h-5 w-5 mr-3 mt-1 text-[#9F7AEA]" />
-                <span>
-                  123 Innovation Way<br />
-                  London<br />
-                  EC1A 1BB
-                </span>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  Cookie Policy
-                </a>
-              </li>
-            </ul>
+          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold leading-6 text-white uppercase tracking-wider">Company</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  <li>
+                    <a href="#benefits" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      Benefits
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#grant" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      £7,000 Grant
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#product" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      Technology
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-10 md:mt-0">
+                <h3 className="text-sm font-semibold leading-6 text-white uppercase tracking-wider">Contact</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  <li className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-purple-400" />
+                    <a href="tel:08001234567" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      0800 123 4567
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 text-purple-400" />
+                    <a href="mailto:hello@novavolt.co.uk" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      hello@novavolt.co.uk
+                    </a>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm leading-6 text-gray-400">
+                      123 Innovation Way<br />London<br />EC1A 1BB
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold leading-6 text-white uppercase tracking-wider">Legal</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  <li>
+                    <a href="#" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="text-sm leading-6 text-gray-400 hover:text-purple-400 transition-colors">
+                      Terms of Service
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div className="border-t border-gray-600 mt-12 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} NovaVolt Ltd. All rights reserved.</p>
+        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-xs leading-5 text-gray-400">
+            &copy; {new Date().getFullYear()} NovaVolt Ltd. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

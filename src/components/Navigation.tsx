@@ -18,11 +18,11 @@ export default function Navigation() {
   }, [scrolled]);
 
   return (
-    <div className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'top-2 sm:top-4' : 'top-0'}`}>
+    <div className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'top-4 sm:top-6' : 'top-4 sm:top-6'}`}>
       <nav className={`mx-auto transition-all duration-300 ${
         scrolled 
-          ? 'max-w-5xl bg-white/80 backdrop-blur-md shadow-lg rounded-full border border-white/20 px-2' 
-          : 'max-w-7xl bg-white/5 backdrop-blur-sm shadow-none border-b border-white/10 px-4'
+          ? 'max-w-5xl bg-white/90 backdrop-blur-md shadow-lg rounded-full border border-white/20 px-2' 
+          : 'max-w-7xl bg-white/10 backdrop-blur-md shadow-lg rounded-full border border-white/10 px-4'
       }`}>
         <div className={`flex justify-between transition-all duration-300 ${scrolled ? 'h-16' : 'h-20'}`}>
           <div className="flex items-center pl-4">
