@@ -16,10 +16,10 @@ export default function Hero() {
               <span>Boiler Upgrade Scheme</span>
             </span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.1] sm:leading-[1.1]">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold tracking-tight text-white leading-[1.1] sm:leading-[1.1]">
             Claim Your <br className="hidden sm:block lg:hidden" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">£7,000</span> Grant Today
           </h1>
-          <p className="mt-6 text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-gray-300 max-w-lg mx-auto lg:mx-0">
+          <p className="mt-6 text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-gray-300 max-w-lg mx-auto lg:mx-0 font-sans">
             Upgrade your home heating to a sleek, energy-efficient heat pump. Slash your energy bills, reduce your carbon footprint, and let the government cover the upfront costs.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">

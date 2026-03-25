@@ -49,12 +49,12 @@ export default function Benefits() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center px-4 sm:px-0">
           <div className="inline-flex items-center gap-2 mb-6 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
-            <span className="text-xs sm:text-sm font-semibold leading-6 text-[#6B46C1] uppercase tracking-wider">Why Upgrade?</span>
+            <span className="text-xs sm:text-sm font-semibold leading-6 text-[#6B46C1] uppercase tracking-wider font-sans">Why Upgrade?</span>
           </div>
-          <p className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 lg:text-6xl">
+          <p className="mt-2 text-4xl sm:text-5xl font-serif font-bold tracking-tight text-gray-900 lg:text-7xl">
             Smarter Heating,<br />Better Living
           </p>
-          <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 max-w-xl mx-auto">
+          <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 max-w-xl mx-auto font-sans">
             Make the smart switch to renewable heating. Enjoy lower bills, a warmer home, and contribute to a greener future with our state-of-the-art heat pumps.
           </p>
         </div>

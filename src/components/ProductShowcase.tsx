@@ -23,11 +23,11 @@ export default function ProductShowcase() {
           
           <div className="lg:pr-8 lg:pt-4 order-2 lg:order-1">
             <div className="lg:max-w-lg">
-              <h2 className="text-sm sm:text-base font-semibold leading-7 text-[#6B46C1] uppercase tracking-wider">Premium Technology</h2>
-              <p className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+              <h2 className="text-sm sm:text-base font-semibold leading-7 text-[#6B46C1] uppercase tracking-wider font-sans">Premium Technology</h2>
+              <p className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-gray-900">
                 The Future of Home Heating
               </p>
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600">
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 font-sans">
                 Our state-of-the-art air source heat pumps are designed to blend seamlessly into your property's exterior while providing unparalleled performance, reliability, and massive energy savings.
               </p>
               

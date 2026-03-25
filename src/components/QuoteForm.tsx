@@ -54,10 +54,10 @@ export default function QuoteForm() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center mb-10 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 lg:text-5xl">
+          <h2 className="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-gray-900 lg:text-5xl">
             Get Your Free Quote
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-gray-600 px-4 sm:px-0">
+          <p className="mt-4 text-base sm:text-lg text-gray-600 px-4 sm:px-0 font-sans">
             Fill out the form below to find out how much you could save with a heat pump and your £7,000 government grant.
           </p>
         </div>

@@ -18,12 +18,12 @@ export default function BusDetails() {
                 <span className="text-purple-600">
                   <Info className="w-4 h-4" />
                 </span>
-                <span className="text-sm font-semibold leading-6 text-purple-700 uppercase tracking-wider">Government Funding</span>
+                <span className="text-sm font-semibold leading-6 text-purple-700 uppercase tracking-wider font-sans">Government Funding</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-                The Boiler Upgrade Scheme <br className="hidden sm:block" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">(BUS)</span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-gray-900 mb-6">
+                The Boiler Upgrade Scheme <br className="hidden sm:block" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 font-sans font-extrabold tracking-normal">(BUS)</span>
               </h2>
-              <div className="prose prose-base sm:prose-lg text-gray-600">
+              <div className="prose prose-base sm:prose-lg text-gray-600 font-sans">
                 <p className="mb-6">
                   The UK Government is currently offering an upfront grant of <strong>£7,000</strong> to encourage homeowners to replace fossil fuel heating systems with a more efficient, low-carbon heat pump.
                 </p>
