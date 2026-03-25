@@ -6,25 +6,22 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-8 pt-12 sm:pt-16 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <a href="/" className="flex items-center gap-2 group">
               <div className="p-1.5 rounded-lg bg-white/10 group-hover:bg-purple-500/20 transition-colors">
-                <Zap className="w-6 h-6 text-purple-400" />
+                <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
               </div>
-              <span className="text-2xl font-bold tracking-tight text-white">
+              <span className="text-xl sm:text-2xl font-bold tracking-tight text-white">
                 NovaVolt
               </span>
             </a>
-            <p className="text-sm leading-6 text-gray-300 max-w-xs">
+            <p className="text-sm leading-6 text-gray-300 max-w-sm sm:max-w-xs">
               Making sustainable heating accessible and affordable for every UK home. Expert heat pump installations with full government grant support.
             </p>
-            <div className="flex space-x-6">
-              {/* Social links could go here */}
-            </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white uppercase tracking-wider">Company</h3>

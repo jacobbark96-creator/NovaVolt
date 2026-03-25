@@ -47,36 +47,36 @@ export default function Benefits() {
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-indigo-200/20 blur-3xl pointer-events-none"></div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center px-4 sm:px-0">
           <div className="inline-flex items-center gap-2 mb-6 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
-            <span className="text-sm font-semibold leading-6 text-[#6B46C1] uppercase tracking-wider">Why Upgrade?</span>
+            <span className="text-xs sm:text-sm font-semibold leading-6 text-[#6B46C1] uppercase tracking-wider">Why Upgrade?</span>
           </div>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+          <p className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 lg:text-6xl">
             Smarter Heating,<br />Better Living
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-600 max-w-xl mx-auto">
             Make the smart switch to renewable heating. Enjoy lower bills, a warmer home, and contribute to a greener future with our state-of-the-art heat pumps.
           </p>
         </div>
         
-        <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-12 sm:mt-16 max-w-7xl lg:mt-24">
+          <dl className="grid max-w-xl grid-cols-1 gap-6 sm:gap-x-8 sm:gap-y-10 lg:max-w-none lg:grid-cols-3 mx-auto">
             {benefits.map((benefit) => (
               <div 
                 key={benefit.name} 
-                className="relative flex flex-col bg-white p-8 rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100 group overflow-hidden"
+                className="relative flex flex-col bg-white p-6 sm:p-8 rounded-2xl sm:rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2 border border-gray-100 group overflow-hidden"
               >
                 {/* Hover gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative z-10">
-                  <div className={`mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${benefit.color} shadow-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                    <benefit.icon className="h-8 w-8 text-white" aria-hidden="true" />
+                  <div className={`mb-4 sm:mb-6 inline-flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br ${benefit.color} shadow-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                    <benefit.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" aria-hidden="true" />
                   </div>
-                  <dt className="text-xl font-bold leading-7 text-gray-900 mb-4 group-hover:text-[#6B46C1] transition-colors duration-300">
+                  <dt className="text-lg sm:text-xl font-bold leading-7 text-gray-900 mb-2 sm:mb-4 group-hover:text-[#6B46C1] transition-colors duration-300">
                     {benefit.name}
                   </dt>
-                  <dd className="flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <dd className="flex flex-auto flex-col text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
                     <p className="flex-auto">{benefit.description}</p>
                   </dd>
                 </div>
