@@ -107,37 +107,59 @@ export default function Navigation() {
           </div>
         </div>
 
-        {/* Mobile menu */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
-          <div className={`px-4 pt-2 pb-6 space-y-2 mt-2 rounded-2xl ${scrolled ? 'bg-transparent' : 'bg-gray-900/90 backdrop-blur-md'}`}>
+        {/* Mobile menu dropdown */}
+        <div 
+          className={`md:hidden absolute top-full left-0 w-full px-2 mt-2 transition-all duration-300 ease-in-out origin-top ${
+            isOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-95 invisible'
+          }`}
+        >
+          <div className={`p-4 space-y-3 rounded-2xl shadow-xl border ${
+            scrolled 
+              ? 'bg-white/95 backdrop-blur-xl border-gray-100' 
+              : 'bg-gray-900/95 backdrop-blur-xl border-white/10'
+          }`}>
             <a
               href="#benefits"
-              className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${scrolled ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' : 'text-gray-300 hover:bg-white/10 hover:text-white'}`}
+              className={`block px-4 py-3 rounded-xl text-base font-medium transition-all ${
+                scrolled 
+                  ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' 
+                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Benefits
             </a>
             <a
               href="#grant"
-              className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${scrolled ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' : 'text-gray-300 hover:bg-white/10 hover:text-white'}`}
+              className={`block px-4 py-3 rounded-xl text-base font-medium transition-all ${
+                scrolled 
+                  ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' 
+                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
+              }`}
               onClick={() => setIsOpen(false)}
             >
               £7.5k Grant
             </a>
             <a
               href="#product"
-              className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${scrolled ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' : 'text-gray-300 hover:bg-white/10 hover:text-white'}`}
+              className={`block px-4 py-3 rounded-xl text-base font-medium transition-all ${
+                scrolled 
+                  ? 'text-gray-700 hover:bg-purple-50 hover:text-[#6B46C1]' 
+                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Technology
             </a>
-            <a
-              href="#quote"
-              className="block w-full text-center mt-4 px-4 py-3 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-[#6B46C1] to-[#805AD5] shadow-md"
-              onClick={() => setIsOpen(false)}
-            >
-              Get Quote
-            </a>
+            <div className="pt-2">
+              <a
+                href="#quote"
+                className="block w-full text-center px-4 py-3.5 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-[#6B46C1] to-[#805AD5] shadow-md hover:shadow-lg transition-all active:scale-[0.98]"
+                onClick={() => setIsOpen(false)}
+              >
+                Get Quote
+              </a>
+            </div>
           </div>
         </div>
       </nav>
