@@ -1,4 +1,4 @@
-import { Zap, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,13 +9,31 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-8 pt-12 sm:pt-16 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-6 sm:space-y-8">
-            <a href="/" className="flex items-center gap-2 group">
-              <div className="p-1.5 rounded-lg bg-white/10 group-hover:bg-purple-500/20 transition-colors">
-                <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
-              </div>
-              <span className="text-xl sm:text-2xl font-bold tracking-tight text-white">
-                NovaVolt
-              </span>
+            <a href="/" className="flex items-center group h-12 w-auto">
+              <svg className="h-full w-auto" viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg">
+                <defs> 
+                  <filter id="footer-glow" x="-50%" y="-50%" width="200%" height="200%"> 
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/> 
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/> 
+                      <feMergeNode in="SourceGraphic"/> 
+                    </feMerge> 
+                  </filter> 
+                  <linearGradient id="footer-purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%"> 
+                    <stop offset="0%" stopColor="#d18fff"/> 
+                    <stop offset="100%" stopColor="#6a00ff"/> 
+                  </linearGradient> 
+                </defs> 
+                <text x="0" y="80" fontFamily="Inter, sans-serif" fontWeight="bold" fontSize="72" fill="white"> 
+                  Nova 
+                </text> 
+                <g transform="translate(195,10)" filter="url(#footer-glow)"> 
+                  <path d="M40 0 L70 0 L50 45 L75 45 L25 110 L40 65 L20 65 Z" fill="url(#footer-purpleGrad)" /> 
+                </g> 
+                <text x="285" y="80" fontFamily="Inter, sans-serif" fontWeight="bold" fontSize="72" fill="white"> 
+                  olt 
+                </text> 
+              </svg>
             </a>
             <p className="text-sm leading-6 text-gray-300 max-w-sm sm:max-w-xs">
               Making sustainable heating accessible and affordable for every UK home. Expert heat pump installations with full government grant support.

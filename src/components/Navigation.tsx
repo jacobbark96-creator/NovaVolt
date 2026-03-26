@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,13 +26,31 @@ export default function Navigation() {
       }`}>
         <div className={`flex justify-between transition-all duration-300 ${scrolled ? 'h-16' : 'h-20'}`}>
           <div className="flex items-center pl-4">
-            <a href="/" className="flex-shrink-0 flex items-center gap-2 group">
-              <div className={`p-1.5 rounded-lg transition-colors ${scrolled ? 'bg-purple-100' : 'bg-white/10'}`}>
-                <Zap className={`w-5 h-5 transition-colors ${scrolled ? 'text-[#6B46C1]' : 'text-white'}`} />
-              </div>
-              <span className={`text-2xl font-bold tracking-tight transition-colors ${scrolled ? 'text-[#6B46C1]' : 'text-white'}`}>
-                NovaVolt
-              </span>
+            <a href="/" className="flex-shrink-0 flex items-center h-full py-2">
+              <svg className="h-full w-auto" viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg">
+                <defs> 
+                  <filter id="nav-glow" x="-50%" y="-50%" width="200%" height="200%"> 
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/> 
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/> 
+                      <feMergeNode in="SourceGraphic"/> 
+                    </feMerge> 
+                  </filter> 
+                  <linearGradient id="nav-purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%"> 
+                    <stop offset="0%" stopColor="#d18fff"/> 
+                    <stop offset="100%" stopColor="#6a00ff"/> 
+                  </linearGradient> 
+                </defs> 
+                <text x="0" y="80" fontFamily="Inter, sans-serif" fontWeight="bold" fontSize="72" fill={scrolled ? '#111827' : 'white'} style={{ transition: 'fill 0.3s' }}> 
+                  Nova 
+                </text> 
+                <g transform="translate(195,10)" filter="url(#nav-glow)"> 
+                  <path d="M40 0 L70 0 L50 45 L75 45 L25 110 L40 65 L20 65 Z" fill="url(#nav-purpleGrad)" /> 
+                </g> 
+                <text x="285" y="80" fontFamily="Inter, sans-serif" fontWeight="bold" fontSize="72" fill={scrolled ? '#111827' : 'white'} style={{ transition: 'fill 0.3s' }}> 
+                  olt 
+                </text> 
+              </svg>
             </a>
           </div>
           
