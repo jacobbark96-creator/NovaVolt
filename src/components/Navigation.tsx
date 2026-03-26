@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <div className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'top-4 sm:top-6' : 'top-4 sm:top-6'}`}>
-      <nav className={`mx-auto transition-all duration-300 ${
+      <nav className={`mx-auto transition-all duration-300 relative ${
         scrolled 
           ? 'max-w-5xl bg-white/90 backdrop-blur-md shadow-lg rounded-full border border-white/20 px-2' 
           : 'max-w-7xl bg-white/10 backdrop-blur-md shadow-lg rounded-full border border-white/10 px-4'
@@ -109,14 +109,14 @@ export default function Navigation() {
 
         {/* Mobile menu dropdown */}
         <div 
-          className={`md:hidden absolute top-full left-0 w-full px-2 mt-2 transition-all duration-300 ease-in-out origin-top ${
+          className={`md:hidden absolute top-full left-0 w-full mt-2 transition-all duration-300 ease-in-out origin-top ${
             isOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-95 invisible'
           }`}
         >
-          <div className={`p-4 space-y-3 rounded-2xl shadow-xl border ${
+          <div className={`p-4 space-y-3 rounded-[2rem] shadow-2xl border ${
             scrolled 
-              ? 'bg-white/95 backdrop-blur-xl border-gray-100' 
-              : 'bg-gray-900/95 backdrop-blur-xl border-white/10'
+              ? 'bg-white/95 backdrop-blur-xl border-gray-200' 
+              : 'bg-gray-900/95 backdrop-blur-xl border-gray-700'
           }`}>
             <a
               href="#benefits"
@@ -151,15 +151,15 @@ export default function Navigation() {
             >
               Technology
             </a>
-            <div className="pt-2">
-              <a
-                href="#quote"
-                className="block w-full text-center px-4 py-3.5 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-[#6B46C1] to-[#805AD5] shadow-md hover:shadow-lg transition-all active:scale-[0.98]"
-                onClick={() => setIsOpen(false)}
-              >
-                Get Quote
-              </a>
-            </div>
+            <div className="pt-2 pb-1">
+                <a
+                  href="#quote"
+                  className="block w-full text-center px-4 py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-[#6B46C1] to-[#805AD5] shadow-md hover:shadow-lg transition-all active:scale-[0.98]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Get Quote
+                </a>
+              </div>
           </div>
         </div>
       </nav>
