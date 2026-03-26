@@ -27,42 +27,46 @@ export default function Navigation() {
         <div className={`flex justify-between transition-all duration-300 ${scrolled ? 'h-16' : 'h-20'}`}>
           <div className="flex items-center pl-4">
             <a href="/" className="flex-shrink-0 flex items-center h-full py-2">
-              <svg className="h-full w-auto" viewBox="0 0 512 102" xmlns="http://www.w3.org/2000/svg">
-                <defs> 
-                  <filter id="nav-glow" x="-50%" y="-50%" width="200%" height="200%"> 
-                    <feGaussianBlur stdDeviation="2" result="blur"> 
-                      <animate attributeName="stdDeviation" 
-                               values="1.8;2.6;1.8" 
-                               dur="2.2s" 
-                               repeatCount="indefinite"/> 
-                    </feGaussianBlur> 
-                    <feMerge> 
-                      <feMergeNode in="blur"/> 
-                      <feMergeNode in="SourceGraphic"/> 
-                    </feMerge> 
-                  </filter> 
-                  <linearGradient id="nav-boltGrad" x1="0%" y1="0%" x2="0%" y2="100%"> 
-                    <stop offset="0%" stopColor="#f3d1ff"/> 
-                    <stop offset="45%" stopColor="#c266ff"/> 
-                    <stop offset="100%" stopColor="#6a00ff"/> 
-                  </linearGradient> 
-                </defs> 
-                <text x="0" y="72" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="62" letterSpacing="-1" fill={scrolled ? '#111827' : '#ffffff'} style={{ transition: 'fill 0.3s' }}> 
-                  Nova 
-                </text> 
-                <g transform="translate(198,4)" filter="url(#nav-glow)"> 
-                  <animateTransform attributeName="transform" 
-                                    type="scale" 
-                                    values="1;1.04;1" 
-                                    dur="2.2s" 
-                                    repeatCount="indefinite" 
-                                    additive="sum"/> 
-                  <path d="M38 0 L68 0 L50 40 L74 40 L30 98 L42 62 L20 62 Z" fill="url(#nav-boltGrad)"/> 
-                  <path d="M46 6 L60 6 L50 34 L64 34 L38 84 L46 58 L34 58 Z" fill="#ffffff"/> 
-                </g> 
-                <text x="284" y="72" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="62" letterSpacing="-1" fill={scrolled ? '#111827' : '#ffffff'} style={{ transition: 'fill 0.3s' }}> 
-                  olt 
-                </text> 
+              <svg className="h-10 sm:h-12 w-auto" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="nav-boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#e9d5ff" />
+                    <stop offset="50%" stopColor="#c084fc" />
+                    <stop offset="100%" stopColor="#7e22ce" />
+                  </linearGradient>
+                  <filter id="nav-glow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                {/* Nova */}
+                <text x="0" y="85" fontFamily="Inter, sans-serif" fontWeight="600" fontSize="72" letterSpacing="-1" fill={scrolled ? '#111827' : '#ffffff'} style={{ transition: 'fill 0.3s' }}>
+                  Nova
+                </text>
+
+                {/* Stylized V + Lightning Bolt */}
+                <g transform="translate(180, 15)" filter="url(#nav-glow)">
+                  <path
+                    d="M 25 0 L 45 60 L 55 35 L 75 35 L 45 95 L 25 30 L 10 30 Z"
+                    fill="url(#nav-boltGrad)"
+                    stroke="#ffffff"
+                    strokeWidth="1.5"
+                  />
+                  {/* Lightning accent extending up */}
+                  <path
+                    d="M 55 35 L 75 0 L 65 25 Z"
+                    fill="#e9d5ff"
+                  />
+                </g>
+
+                {/* olt */}
+                <text x="260" y="85" fontFamily="Inter, sans-serif" fontWeight="600" fontSize="72" letterSpacing="-1" fill={scrolled ? '#111827' : '#ffffff'} style={{ transition: 'fill 0.3s' }}>
+                  olt
+                </text>
               </svg>
             </a>
           </div>
